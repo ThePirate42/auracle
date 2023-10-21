@@ -416,7 +416,7 @@ int Auracle::BuildOrder(const std::vector<std::string>& args,
   if (r < 0) {
     return r;
   }
-  std::cerr << "test" << std::endl;
+
   if (iter.package_cache.empty()) {
     return -ENOENT;
   }
@@ -450,7 +450,7 @@ int Auracle::BuildOrder(const std::vector<std::string>& args,
       if (is_target) {
         std::cout << "TARGET";
       } else if (satisfied) {
-        std::cout << "SATISFIED";
+        std::cout << "TEST";
       }
 
       if (from_aur) {
